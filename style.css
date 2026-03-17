@@ -1,0 +1,142 @@
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+body{
+    background-color: var(--background);
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.inner{
+    color: var(--text-base);
+    align-self: center;
+    justify-self: center;
+    margin-top: 5rem;
+    background-color: var(--form-background);
+    height: fit-content;
+    width: 50%;
+    padding: 4rem;
+}
+
+.logo{
+    height: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    width: fit-content;
+}
+
+.logIn{
+    font-size: 2rem;
+}
+
+.twoLines{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.text{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.remindMe{
+    padding-bottom: 1rem;
+}
+
+input[type="email"]::placeholder{
+    content: url('images/mail.svg');
+    padding-top: 6px;
+}
+
+input[type="email"]:focus::placeholder{
+    content: url('images/mail-focus.svg');
+    padding-top: 6px;
+}
+
+.inputPS::placeholder{
+    content: url('images/lock.svg');
+    padding-top: 6px;
+}
+.inputPS:focus::placeholder{
+    content: url('images/lock-focus.svg');
+    padding-top: 6px;
+}
+/*
+input[type="passwrd"]::placeholder{
+    content: url('images/lock.svg');
+    padding-top: 6px;
+}
+
+
+input[type="passwrd"]:focus::placeholder{
+    content: url('images/lock-focus.svg');
+    padding-top: 6px;
+}
+*/
+input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+
+}
+
+input[type="checkbox"]::before {
+   accent-color: #002B4E;
+}
+
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+}
+
+.forgot{
+    color: var(--primary-color);
+}
+
+.input{
+    font: 1.25rem / 1.5 sans-serif;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #000000;
+    color: var(--primary-color);
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ffc632;
+  box-shadow: 0 0 5px  #f5c753;
+  background-color: #000000;
+}
+
+.loginButton{
+    font: 1.25rem / 1.5 sans-serif;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: var(--background);
+}
+
+.noAcc{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.rightPic img{
+    height: 97vh;
+}
